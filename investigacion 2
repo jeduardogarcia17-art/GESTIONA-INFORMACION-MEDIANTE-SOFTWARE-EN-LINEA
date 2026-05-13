@@ -1,0 +1,49 @@
+Ámbito: Comunicación y revisión.
+1. ¿Qué es un commit?
+Como vimos anteriormente, un commit es un punto de control o "snapshot" de tus archivos. No es simplemente guardar un archivo (como harías en Word), sino registrar formalmente un conjunto de cambios en la base de datos de tu proyecto. Cada commit incluye un mensaje descriptivo, el nombre del autor y una marca de tiempo.
+
+2. ¿Para qué sirve el historial de versiones?
+El historial es la "máquina del tiempo" de tu proyecto. Sus funciones principales son:
+
+Rastreo de cambios: Puedes ver exactamente qué líneas de código se añadieron, eliminaron o modificaron y quién lo hizo.
+
+Recuperación de errores: Si algo deja de funcionar, puedes comparar la versión actual con una anterior para identificar el fallo o simplemente "regresar en el tiempo" a un estado donde todo funcionaba correctamente.
+
+Auditoría: Permite entender la evolución del proyecto y por qué se tomaron ciertas decisiones técnicas en el pasado.
+
+3. Ventajas de GitHub para el trabajo colaborativo
+Aunque Git es la herramienta técnica, GitHub es la plataforma social y de gestión que facilita que muchas personas trabajen en el mismo código sin estorbarse. Sus principales ventajas son:
+
+Pull Requests (PR): Permiten que un integrante del equipo proponga cambios. Antes de que el código se sume al proyecto principal, otros compañeros pueden revisarlo, dejar comentarios y sugerir mejoras.
+
+Gestión de conflictos: Si dos personas modifican la misma línea de un archivo, GitHub ayuda a identificar el problema y permite elegir qué versión conservar de manera organizada.
+
+Centralización: Ofrece un lugar único y accesible en la nube donde todos pueden subir su trabajo y descargar las actualizaciones de los demás, eliminando la necesidad de enviarse archivos por correo o USB.
+
+Control de acceso: Puedes definir quién tiene permiso para ver el código, quién puede proponer cambios y quién tiene la autoridad final para aprobarlos.
+
+Herramientas extras: Incluye seguimiento de problemas (Issues), tableros de tareas (proyectos) y automatizaciones que prueban el código cada vez que alguien sube un cambio.
+¿Qué sucede si un archivo se elimina accidentalmente?
+Si borras un archivo de tu carpeta de trabajo, no se pierde para siempre, siempre y cuando hayas hecho al menos un commit previo que lo incluyera. Gracias al historial, puedes realizar lo siguiente:
+
+Recuperación inmediata: Puedes usar comandos para "restaurar" el archivo a su estado en el último commit realizado. El sistema simplemente vuelve a copiar el archivo desde la base de datos del repositorio a tu carpeta.
+
+Viaje al pasado: Si el archivo se borró hace mucho tiempo y apenas te diste cuenta, puedes buscar en qué commit específico existía y extraerlo de ahí sin afectar el trabajo actual.
+
+Comparación: Antes de recuperarlo, puedes ver qué contenido tenía para estar seguro de que es la versión que necesitas.
+
+¿Por qué es importante escribir mensajes claros en los commits?
+El mensaje de commit es la única forma que tienes (tú y tu equipo) de saber qué pasó en el proyecto sin tener que leer líneas y líneas de código. Escribir mensajes claros como "Se añade validación al formulario de contacto" en lugar de "Cambios" es vital por estas razones:
+
+4. Facilita la búsqueda en el historial
+Si necesitas recuperar ese archivo que borraste por accidente, un historial con mensajes claros te permitirá encontrar el momento exacto donde el archivo estaba intacto. Si todos tus mensajes dicen "update", tardarás horas revisando cada punto de guardado.
+
+5. Mejora la revisión de código (Code Review)
+En el trabajo colaborativo, tus compañeros necesitan entender qué intentabas hacer. Un mensaje claro explica la intención:
+
+Mal mensaje: "Corregido" (¿Qué se corrigió? ¿Por qué estaba mal?).
+
+Buen mensaje: "Se corrige error en el cálculo del IVA que causaba decimales infinitos".
+
+ Ayuda a tu "yo del futuro"
+Es muy común volver a un proyecto meses después y no recordar por qué se hizo un cambio extraño. Un buen mensaje de commit sirve como una nota técnica que te ahorra tiempo de investigación.
